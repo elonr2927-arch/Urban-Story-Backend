@@ -73,7 +73,7 @@ router.get(
   })
 );
 
-router.post('/locations/cities', (req, res, next) => {
+router.get('/cities', (req, res, next) => {
   return res.status(201).json({
     status: 'success',
     cities: [
