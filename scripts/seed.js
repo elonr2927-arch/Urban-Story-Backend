@@ -8,8 +8,6 @@ const User = require('../src/models/User');
 const Property = require('../src/models/Property');
 const Booking = require('../src/models/Booking');
 
-// ── Sample Data ───────────────────────────────────────────────────────────────
-
 const agents = [
   {
     name: 'Sophia Marchetti',
@@ -44,7 +42,6 @@ const agents = [
 ];
 
 const properties = [
-  // ── New York ──────────────────────────────────────────────────────────────
   {
     slug: 'prop-001',
     title: 'The Madison Loft',
@@ -847,12 +844,12 @@ async function seed() {
 
   console.log(`[Seed] ✓ ${bookings.length} sample bookings created`);
 
-  console.log('\n[Seed] ✅ Database seeded successfully!\n');
+  console.log('\n[Seed] Database seeded successfully!\n');
   await mongoose.connection.close();
   process.exit(0);
 }
 
 seed().catch((err) => {
-  console.error('[Seed] ❌ Seed failed:', err);
+  console.error('[Seed] Seed failed:', err);
   process.exit(1);
 });
