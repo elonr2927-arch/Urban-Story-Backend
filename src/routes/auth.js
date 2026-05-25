@@ -24,6 +24,12 @@ const router = express.Router();
 
 const RESET_TOKEN_EXPIRES_MS = 60 * 60 * 1000; // 1 hour
 
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+/**
+ * Issue an access + refresh token pair and set the cookie.
+ * Stores hashed refresh token in user's refreshTokens array.
+ */
 async function issueTokenPair(res, user) {
   const tokenId = uuidv4();
   const accessToken = signAccessToken(user._id.toString());
