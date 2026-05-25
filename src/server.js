@@ -1,7 +1,7 @@
 'use strict';
 
 require('dotenv').config();
-
+const mongoose = require('mongoose');
 const createApp = require('./app');
 const connectDB = require('./config/database');
 const { startStatusTransitionJob } = require('./jobs/statusTransition');
@@ -45,7 +45,6 @@ async function main() {
     console.log('[Server] ' + signal + ' received. Shutting down gracefully...');
     server.close(async () => {
       console.log('[Server] HTTP server closed.');
-      const mongoose = require('mongoose');
       await mongoose.connection.close();
       console.log('[Server] MongoDB connection closed.');
       process.exit(0);
