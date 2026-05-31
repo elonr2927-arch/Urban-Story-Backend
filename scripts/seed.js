@@ -355,16 +355,16 @@ const properties = [
   },
   {
     slug: 'prop-010',
-    title: 'Newly Renovated 1-Bedroom Apartment in Monett',
+    title: 'Newly Renovated 1-Bedroom Apartment in Indianapolis',
     type: 'Apartment',
-    city: 'Monett',
-    zip: '65708',
-    address: '106 E Sycamore St, Monett, MO 65708',
+    city: 'Indianapolis',
+    zip: '46226',
+    address: '106 E 38th St, Indianapolis, IN 46226',
     price: 850,
     beds: 1,
     baths: 1,
     area: 600,
-    description: 'Be the first to move into this beautifully renovated 1-bedroom, 1-bathroom apartment in Monett, MO. This modern unit features premium finishes including hardwood-style flooring, elegant quartz countertops, custom self-closing cabinets, and stainless steel appliances with a built-in microwave, electric stove, and refrigerator.\n\nEnjoy comfort with mini-split heating and air conditioning, ceiling fans, and a tub/shower combo. Additional perks include onsite laundry, included water, sewer, trash, and lawncare. Pet friendly (dogs & cats welcome) and designated non-smoking.\n\nAvailable June 1st, 2026 on a 12-month lease. A wonderful opportunity to enjoy contemporary living in a well-maintained community.',
+    description: 'Be the first to move into this beautifully renovated 1-bedroom, 1-bathroom apartment in Indianapolis, IN. This modern unit features premium finishes including hardwood-style flooring, elegant quartz countertops, custom self-closing cabinets, and stainless steel appliances with a built-in microwave, electric stove, and refrigerator.\n\nEnjoy comfort with mini-split heating and air conditioning, ceiling fans, and a tub/shower combo. Additional perks include onsite laundry, included water, sewer, trash, and lawncare. Pet friendly (dogs & cats welcome) and designated non-smoking.\n\nAvailable June 1st, 2026 on a 12-month lease. A wonderful opportunity to enjoy contemporary living in a well-maintained community.',
     images: [
       'https://i.ibb.co/60gxjTvy/8.jpg',
       'https://i.ibb.co/zhw0H30Z/9.jpg',
@@ -385,11 +385,11 @@ const properties = [
     featured: false,
     isNewListing: true,
     agent: agents[0],
-    lat: 36.9225,
-    lng: -94.0900,
-    neighbourhood: 'Monett, Missouri is a welcoming community known for its friendly atmosphere, convenient location, and access to local amenities. This property offers comfortable and modern living in a desirable small-town setting.',
+    lat: 39.8220,
+    lng: -86.0005,
+    neighbourhood: 'Located in the 46226 zip code of Indianapolis, this vibrant neighborhood offers convenient access to local amenities, parks, shopping, and major roadways. It provides a comfortable and practical setting for everyday living.',
     createdAt: new Date('2026-05-16')
-  }
+}
 ]
 
 async function seed() {
